@@ -1,3 +1,20 @@
+// This file is part of nvotes-results.
+// Copyright (C) 2014-2016  Agora Voting SL <agora@agoravoting.com>
+//
+// authapi is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published by
+// the Free Software Foundation, either version 3 of the License.
+//
+// authapi  is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with authapi.  If not, see <http://www.gnu.org/licenses/>.
+
+package org.nvotes.results
+
 import com.thoughtworks.binding.Binding.{Var, Vars}
 import com.thoughtworks.binding.dom
 import org.scalajs.dom.document
@@ -5,11 +22,13 @@ import org.scalajs.dom.raw.Event
 
 import scala.scalajs.js.annotation.JSExport
 
+import scala.scalajs.js.JSApp
+
 /**
-  * @author 杨博 (Yang Bo) &lt;pop.atry@gmail.com&gt;
+  * @author Eduardo Robles Elvira &lt;edulix@nvotes.com&gt;
   */
 @JSExport
-object SampleMain {
+object Main extends JSApp {
 
   case class Contact(name: Var[String], email: Var[String])
 

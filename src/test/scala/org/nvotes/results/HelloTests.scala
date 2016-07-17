@@ -13,8 +13,21 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with authapi.  If not, see <http://www.gnu.org/licenses/>.
 
-// web plugins
-addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.2.2")
+package org.nvotes.results
 
-// Scala.js
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.5")
+import utest._
+
+object HelloTests extends TestSuite{
+  val tests = this{
+    'test1{
+      throw new Exception("test1")
+    }
+    'test2{
+      1
+    }
+    'test3{
+      val a = List[Byte](1, 2)
+      a(10)
+    }
+  }
+}
