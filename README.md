@@ -17,7 +17,7 @@ You will need to [download & install sbt](http://www.scala-sbt.org/0.13/tutorial
 Execute in the main directory the following command:
 
     cd path/to/nvotes-results/
-    sbt web
+    sbt assets
 
 ### Step 2: Open it in a web browser
 
@@ -27,4 +27,13 @@ Open in a browser the path to `nvotes-results/target/web/assets-managed/main/ind
 
 Let's build and run the unit tests.
 
-### Step 0: 
+### Step 0: Prerequisites
+
+The same as in the building step.
+
+### step 1: Run tests
+
+Execute in the main directory the following command:
+
+    cd path/to/nvotes-results/
+    sbt js/test
